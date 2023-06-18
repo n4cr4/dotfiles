@@ -1,0 +1,11 @@
+# ignore all
+*
+!*/
+
+# white list
+!/.config
+!/.config/**
+!/.gitmodules
+!/nvchad/
+!/nvchad/**
+!/.gitignore
