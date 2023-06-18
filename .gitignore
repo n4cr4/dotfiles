@@ -3,10 +3,8 @@
 !*/
 
 # white list
-!/.config
-!/.config/**
+!/.config/*
 !/.gitmodules
-!/nvchad/
-!/nvchad/**
+!/nvchad/*
 !/.gitignore
-!/.bin/**
+!/.bin/*
