@@ -9,3 +9,4 @@
 !/nvchad/
 !/nvchad/**
 !/.gitignore
+!/.bin/**
