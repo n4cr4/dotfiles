@@ -44,3 +44,19 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
 zinit light zdharma/history-search-multi-word
+
+zinit ice from"gh-r" as"program"
+zinit light junegunn/fzf-bin
+
+zinit ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit light sharkdp/bat
+
+zinit ice wait"2" lucid from"gh-r" as"program" mv"bin/exa* -> exa"
+zinit light ogham/exa
+
+zinit ice wait lucid
+zinit load "wfxr/forgit"
+
+
+alias cat="bat"
+alias ls="exa"
