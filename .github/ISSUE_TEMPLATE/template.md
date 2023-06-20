@@ -10,4 +10,4 @@ assignees: n4cr4
 ## Purpose
 
 ## Todo
-- [] xxx
+- [ ] xxx
