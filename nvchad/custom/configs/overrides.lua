@@ -47,6 +47,10 @@ M.mason = {
 		-- docker
 		"docker-compose-language-service",
 		"dockerfile-language-server",
+
+		-- latex
+		"latexindent",
+		"ltex-ls",
 	},
 }
 
