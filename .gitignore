@@ -3,9 +3,6 @@
 !*/
 
 # white list
-!/.config/*
-!/.gitmodules
-!/nvchad/*
 !/.gitignore
 !/.bin/*
 !/README.md
