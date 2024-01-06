@@ -28,4 +28,4 @@ setw -g window-status-activity-style "underscore,fg=#839496,bg=#002b36"
 setw -g window-status-separator ""
 setw -g window-status-style "NONE,fg=#839496,bg=#002b36"
 setw -g window-status-format '#[fg=#002b36,bg=#002b36]#[default] #I  #W #[fg=#002b36,bg=#002b36,nobold,nounderscore,noitalics]'
-setw -g window-status-current-format '#[fg=#002b36,bg=#eee8d5]#[fg=#7abbde,bg=#eee8d5] #I #[fg=#eee8d5,bg=#7abbde] #W} #[fg=#7abbde,bg=#002b36,nobold]'
+setw -g window-status-current-format '#[fg=#002b36,bg=#eee8d5]#[fg=#7abbde,bg=#eee8d5] #I #[fg=#eee8d5,bg=#7abbde] #W #[fg=#7abbde,bg=#002b36,nobold]'
