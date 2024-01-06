@@ -6,6 +6,7 @@ HISTFILE=~/.zsh_history
 export zenhan='/mnt/c/bin/zenhan.exe'
 export PATH=$PATH:/mnt/c/bin/
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:/snap/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -63,3 +64,4 @@ alias ls="exa"
 alias tree="exa -T"
 
 alias rie="explorer.exe"
+alias vim="nvim"
