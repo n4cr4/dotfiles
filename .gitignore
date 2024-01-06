@@ -10,3 +10,4 @@
 !/.latexmkrc
 !/.nvim/*
 !/.gdbinit
+!/tmux/*
