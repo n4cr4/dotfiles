@@ -1,3 +1,10 @@
+-- netrw config
+vim.api.nvim_command('filetype plugin on')
+vim.g.netrw_liststyle = 3
+vim.g.netrw_banner = 0
+vim.g.netrw_preview = 1
+
+-- ime func
 local autocmd = vim.api.nvim_create_autocmd
 
 if (vim.fn.has('win64')) then
