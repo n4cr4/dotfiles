@@ -11,4 +11,4 @@
 !/.nvim/*
 !/.gdbinit
 !/tmux/*
-!/nvchad/*
+!/nvchad/*/*
