@@ -25,42 +25,39 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
 zinit light-mode for \
     zdharma-continuum/zinit-annex-as-monitor \
     zdharma-continuum/zinit-annex-bin-gem-node \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
-### End of Zinit's installer chunk
-#
-
-
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
-zinit light zsh-users/zsh-autosuggestions
+zinit light-mode for \
+    zsh-users/zsh-autosuggestions \
+    zsh-users/zsh-completions \
+    zdharma/history-search-multi-word
 
-zinit light zsh-users/zsh-completions
-
-zinit light zdharma/history-search-multi-word
-
-zinit ice from"gh-r" as"program"
-zinit light junegunn/fzf-bin
-
-zinit ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit ice wait"2" lucid as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zinit light sharkdp/bat
 
-zinit ice wait"2" lucid from"gh-r" as"program" mv"bin/exa* -> exa"
+zinit ice from"gh-r" as"program" mv"bin/exa* -> exa"
 zinit light ogham/exa
 
-zinit ice wait lucid
-zinit load "wfxr/forgit"
+zinit light agkozak/zsh-z
 
+zinit ice wait"1" lucid from"gh-r" for \
+    sbin'fzf' junegunn/fzf \
+    sbin'**/lazygit' jesseduffield/lazygit \
+    sbin'lazydocker' jesseduffield/lazydocker \
+    as"program" mv"dust* -> dust" pick"dust/dust" @bootandy/dust
 
 alias cat="bat"
-alias ls="exa"
+alias ls="exa --icons"
+alias la="ls -a"
+alias ll="ls -l"
+alias lla="ls -la"
 alias tree="exa -T"
 
 alias rie="explorer.exe"
