@@ -47,7 +47,7 @@ zinit light ogham/exa
 
 zinit light agkozak/zsh-z
 
-zinit ice wait"1" lucid from"gh-r" for \
+zinit wait"1" lucid from"gh-r" for \
     sbin'fzf' junegunn/fzf \
     sbin'**/lazygit' jesseduffield/lazygit \
     sbin'lazydocker' jesseduffield/lazydocker \
