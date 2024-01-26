@@ -8,7 +8,12 @@
 !/README.md
 !/.zshrc
 !/.latexmkrc
-!/.nvim/*
 !/.gdbinit
 !/tmux/*
-!/nvchad/*/*
+!/nvim/**/*
+nvim/LICENSE
+nvim/.neoconf.json
+nvim/lazy-lock.json
+nvim/lazyvim.json
+nvim/stylua.toml
+nvim/README.md
