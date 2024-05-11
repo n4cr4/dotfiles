@@ -1,6 +1,26 @@
-# Usage
+# Keymap
+## vim
+|--------------- | --------------- |
+| Key   | Description    |
+| ``<leader>```   | switch buffer   |
+| `<leader>w[-, |]`   | split window |
+| `<leader>cf`   | Format   |
+| `s`| Flash (fast search and move) |
+| `<leader>sk` | search key mapping |
+| `<leader>sg` | live grep in directory |
+| `<leader>sh` | live grep in vim help |
 
-```sh
-cd .bin
-./install.sh
-```
+## tmux
+- prefix: `k`
+- switching pane
+  - `prefix `+ `h, j, k, l`
+- swap window
+  - `Ctrl `+ `Shift `+ `Left, Right`
+- split pane
+  - `prefix` + `|, -`
+- resize pane
+  - `prefix` + `Ctrl` + `h, j, k, l`
+- enter vi mode
+  - `prefix` + `[`
+- exit enter mode
+  - `Enter`
