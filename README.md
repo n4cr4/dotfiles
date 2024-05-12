@@ -26,9 +26,11 @@
   - `Enter`
 
 ## fzf
+- trigger fzf comp
+  - `**<TAB>`
 - Paste the selected files and directories
   - `Ctrl` + `T`
-- Paste the selected command from history
+- Paste the selected command from terminal history
   - `Ctrl` + `R`
 
 # Installed CLI tools
