@@ -24,3 +24,19 @@
   - `prefix` + `[`
 - exit enter mode
   - `Enter`
+
+# Installed CLI tools
+- bat
+- exa
+- lazygit
+- lazydocker
+- dust
+- fzf
+- 
+
+# Tips
+If you want to debug some lua vim configs, then use below.
+```lua
+print(vim.inspect(hogehuga))
+```
+and just `:messages` in x-mode.
