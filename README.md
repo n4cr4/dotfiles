@@ -25,6 +25,12 @@
 - exit enter mode
   - `Enter`
 
+## fzf
+- Paste the selected files and directories
+  - `Ctrl` + `T`
+- Paste the selected command from history
+  - `Ctrl` + `R`
+
 # Installed CLI tools
 - bat
 - exa
@@ -32,7 +38,7 @@
 - lazydocker
 - dust
 - fzf
-- 
+- zoxide
 
 # Tips
 If you want to debug some lua vim configs, then use below.

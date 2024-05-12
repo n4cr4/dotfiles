@@ -3,8 +3,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-export zenhan='/mnt/c/bin/zenhan.exe'
-export PATH=$PATH:/mnt/c/bin/
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/snap/bin
 
@@ -45,13 +43,18 @@ zinit light sharkdp/bat
 zinit ice from"gh-r" as"program" mv"bin/exa* -> exa"
 zinit light ogham/exa
 
-zinit light agkozak/zsh-z
+zinit ice as"command" from"gh-r" lucid \
+  atclone"./zoxide init zsh > init.zsh" \
+  atpull"%atclone" src"init.zsh" nocompile'!'
+zinit light ajeetdsouza/zoxide
 
 zinit wait"1" lucid from"gh-r" for \
     sbin'fzf' junegunn/fzf \
     sbin'**/lazygit' jesseduffield/lazygit \
     sbin'lazydocker' jesseduffield/lazydocker \
     as"program" mv"dust* -> dust" pick"dust/dust" @bootandy/dust
+
+eval "$(fzf --zsh)"
 
 alias cat="bat"
 alias ls="exa --icons"
@@ -64,6 +67,7 @@ alias ld="lazydocker"
 alias dcd="docker compose down"
 alias dcu="docker compose up"
 alias dcb="docker compose build"
+alias cd="z"
 
 alias rie="explorer.exe"
 alias vim="nvim"
