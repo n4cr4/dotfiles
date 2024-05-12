@@ -1,9 +1,9 @@
 # Keymap
 ## vim
-|--------------- | --------------- |
 | Key   | Description    |
-| ``<leader>```   | switch buffer   |
-| `<leader>w[-, |]`   | split window |
+|--------------- | --------------- |
+| `` <leader>` ``   | switch buffer   |
+| `<leader>w[-, \|]`   | split window |
 | `<leader>cf`   | Format   |
 | `s`| Flash (fast search and move) |
 | `<leader>sk` | search key mapping |
