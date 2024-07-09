@@ -55,12 +55,9 @@ zinit wait"1" lucid from"gh-r" for \
     sbin'fzf' junegunn/fzf \
     sbin'**/lazygit' jesseduffield/lazygit \
     sbin'lazydocker' jesseduffield/lazydocker \
-    sbin'the-way' out-of-cheese-error/the-way \
     as"program" mv"dust* -> dust" pick"dust/dust" @bootandy/dust
 
 eval "$(fzf --zsh)"
-eval "$(the-way complete zsh)"
-export THE_WAY_CONFIG="$HOME/.the-way.toml"
 
 # alias conf
 alias cat="bat"
