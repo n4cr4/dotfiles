@@ -9,13 +9,12 @@ import splitmind
   .tell_splitter(set_title="main")
   .left(display="disasm", size="35%")
   .below(of="disasm", display="backtrace", size="20%")
-  .left(of="main", display="regs", size="50%")
-  .below(display="stack", size="60%")
-  .below(cmd="tty; tail -f /dev/null", size="30%", clearing=False)
-  .tell_splitter(set_title="I/O")
-  .above(of="main", cmd="ipython", size="75%")
-  .tell_splitter(set_title="ipython")
+  .left(of="main", display="legend", size="50%")
+  .show("regs", on="legend")
+  .below(display="stack", size="55%")
 ).build()
 end
 
-set context-code-lines 20
+
+set context-stack-lines 20
+set context-code-lines 15 
