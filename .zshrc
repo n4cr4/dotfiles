@@ -40,13 +40,13 @@ zinit light-mode for \
     zsh-users/zsh-completions \
     zdharma/history-search-multi-word
 
-zinit ice wait"2" lucid as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit ice wait"2" lucid as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zinit light sharkdp/bat
 
 zinit ice from"gh-r" as"program" mv"bin/exa* -> exa"
 zinit light ogham/exa
 
-zinit ice as"command" from"gh-r" lucid \
+zinit ice as"program" from"gh-r" lucid \
   atclone"./zoxide init zsh > init.zsh" \
   atpull"%atclone" src"init.zsh" nocompile'!'
 zinit light ajeetdsouza/zoxide
@@ -55,9 +55,12 @@ zinit wait"1" lucid from"gh-r" for \
     sbin'fzf' junegunn/fzf \
     sbin'**/lazygit' jesseduffield/lazygit \
     sbin'lazydocker' jesseduffield/lazydocker \
+    sbin'the-way' out-of-cheese-error/the-way \
     as"program" mv"dust* -> dust" pick"dust/dust" @bootandy/dust
 
 eval "$(fzf --zsh)"
+eval "$(the-way complete zsh)"
+export THE_WAY_CONFIG="$HOME/.the-way.toml"
 
 # alias conf
 alias cat="bat"
