@@ -18,3 +18,5 @@ end
 
 set context-stack-lines 20
 set context-code-lines 15 
+
+source ~/.local/share/GEP/gdbinit-gep.py

@@ -1,8 +1,9 @@
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+# hist file conf
 HISTSIZE=1000
-SAVEHIST=1000
+SAVEHIST=100000
 HISTFILE=~/.zsh_history
 
+# path conf
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/snap/bin
 
@@ -10,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-### Added by Zinit's installer
+# zinit conf
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
     command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
@@ -56,6 +57,7 @@ zinit wait"1" lucid from"gh-r" for \
 
 eval "$(fzf --zsh)"
 
+# alias conf
 alias cat="bat"
 alias ls="exa --icons"
 alias la="ls -a"
@@ -63,10 +65,13 @@ alias ll="ls -l"
 alias lla="ls -la"
 alias tree="exa -T"
 alias lg="lazygit"
+alias lad="lazydocker"
 alias dcd="docker compose down"
 alias dcu="docker compose up"
 alias dcb="docker compose build"
 alias cd="z"
-
 alias rie="explorer.exe"
 alias py="ipython"
+alias se="~/dotfiles/bin/live-grep.sh"
+alias ins="~/dotfiles/bin/install.sh"
+alias dev="~/dotfiles/bin/tmux-template.sh"
