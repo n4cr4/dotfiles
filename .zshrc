@@ -69,5 +69,4 @@ alias dcb="docker compose build"
 alias cd="z"
 
 alias rie="explorer.exe"
-alias vim="nvim"
 alias py="ipython"
