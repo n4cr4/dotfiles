@@ -1,0 +1,14 @@
+# ignore all
+*
+!*/
+
+# white list
+!/.gitignore
+!/bin/*
+!/nvim/*.lua
+!/README.md
+!/.zshrc
+!/.latexmkrc
+!/.gdbinit
+!/.tmux.conf
+!/.vimrc
