@@ -66,6 +66,7 @@ zinit wait"1" lucid from"gh-r" for \
     as"program" mv"dust* -> dust" pick"dust/dust" @bootandy/dust
 
 eval "$(fzf --zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
 
 # alias conf
 alias cat="bat"
@@ -85,3 +86,4 @@ alias py="ipython"
 alias se="~/dotfiles/bin/live-grep.sh"
 alias ins="~/dotfiles/bin/install.sh"
 alias dev="~/dotfiles/bin/tmux-template.sh"
+alias vim="nvim"

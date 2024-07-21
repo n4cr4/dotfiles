@@ -1,5 +1,15 @@
 # Keymap
 ## vim
+| Key   | Description    |
+|--------------- | --------------- |
+| `` <leader>` ``   | switch buffer   |
+| `<leader>w[-, \|]`   | split window |
+| `<leader>cf`   | Format   |
+| `s`| Flash (fast search and move) |
+
+| `<leader>sk` | search key mapping |
+| `<leader>sg` | live grep in directory |
+| `<leader>sh` | live grep in vim help |
 
 ## tmux
 - prefix: `k`
