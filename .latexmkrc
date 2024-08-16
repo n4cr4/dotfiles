@@ -1,5 +1,12 @@
-$latex = 'platex %O %S';
-$dvipdf = 'dvipdfmx %O -o %D %S';
+$latex = 'lualatex -synctex=1 -halt-on-error -file-line-error %O %S';
+$bibtex = 'upbibtex %O %S';
+$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %S';
+$makeindex = 'upmendex %O -o %D %S';
 
-$max_repeat = 5;
-$pdf_mode = 3;
+$pdf_mode = 4;
+$max_repeat = 3;
+
+$out_dir = ".";
+$emulate_aux = 1;
+$aux_dir = ".tex";
+
