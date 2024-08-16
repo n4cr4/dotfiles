@@ -9,6 +9,7 @@
 | `<leader>sk` | search key mapping |
 | `<leader>sg` | live grep in directory |
 | `<leader>sh` | live grep in vim help |
+| `<leader><space>` | toggle window size |
 
 ## tmux
 - prefix: `Ctrl-t`

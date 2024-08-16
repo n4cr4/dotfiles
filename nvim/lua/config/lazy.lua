@@ -14,7 +14,9 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local LazyConf = {
 	spec = {
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
-		-- extras
+    -- extras coding
+    { import = "lazyvim.plugins.extras.coding.mini-surround"},
+		-- extras lang
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		{ import = "lazyvim.plugins.extras.lang.python" },
 		{ import = "lazyvim.plugins.extras.lang.clangd" },

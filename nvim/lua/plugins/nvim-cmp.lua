@@ -5,8 +5,8 @@ return {
       local cmp = require("cmp")
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<C-Space>"] = nil,
-        ["<C-t"] = cmp.mapping.complete(), -- (t)oggle
-        ["<C-q>"] = cmp.mapping.abort(),
+        ["<C-r>"] = cmp.mapping.complete(), -- reload completion
+        ["<C-a>"] = cmp.mapping.abort(), -- abort
       })
     end,
   },
