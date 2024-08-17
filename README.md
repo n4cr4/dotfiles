@@ -10,6 +10,9 @@
 | `<leader>sg` | live grep in directory |
 | `<leader>sh` | live grep in vim help |
 | `<leader><space>` | toggle window size |
+| `<leader>w` | window manipultion |
+| `<leader>h` | harpoon menu |
+| `<leader>H` | harpoon file |
 
 ## tmux
 - prefix: `Ctrl-t`

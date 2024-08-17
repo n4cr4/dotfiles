@@ -16,6 +16,8 @@ local LazyConf = {
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- extras coding
     { import = "lazyvim.plugins.extras.coding.mini-surround"},
+    -- extras editor 
+    { import = "lazyvim.plugins.extras.editor.harpoon2"},
 		-- extras lang
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		{ import = "lazyvim.plugins.extras.lang.python" },
