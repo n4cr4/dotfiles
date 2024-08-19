@@ -47,5 +47,5 @@ customCommands:
         initialValue: ""
       - type: "confirm"
         title: "Commit"
-        body: "Commit with the message '{{.Form.Type}}: {{.Form.Message}}'. Is this okay?"
-    command: "bash -c 'type=\"{{.Form.Type}}\"; message=\"{{.Form.Message}}\"; commit_message=\"$type: $message\"; git commit -m \"commit_message\"'"
+        body: "{{.Form.Type}}: {{.Form.Message}}"
+    command: "git commit -m \"{{.Form.Type}}: {{.Form.Message}}\""
