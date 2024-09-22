@@ -14,6 +14,7 @@ setopt hist_find_no_dups
 # path conf
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/snap/bin
+export PATH=$PATH:$HOME/go/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
