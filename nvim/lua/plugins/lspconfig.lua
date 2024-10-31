@@ -7,8 +7,9 @@ return {
 			ruff = {
 				init_options = {
 					settings = {
+                        lineLength = 100,
 						lint = {
-							ignore = { "F403", "F405" },
+                            enable = false,
 						},
 					},
 				},
