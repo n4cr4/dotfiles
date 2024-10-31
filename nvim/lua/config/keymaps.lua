@@ -16,7 +16,5 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
-
 -- toggle window
 keymap.set({"n", "v"}, "<leader><space>", "<leader>wm", {remap = true})
-
