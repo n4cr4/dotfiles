@@ -17,6 +17,10 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "toml",
+        "c",
+        "cpp",
+        "diff"
       },
     },
   },
