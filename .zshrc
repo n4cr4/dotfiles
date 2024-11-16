@@ -72,7 +72,7 @@ eval "$(fzf --zsh)"
 eval "$(~/.local/bin/mise activate zsh)"
 
 # alias conf
-alias cat="bat"
+alias cat="bat -pP"
 alias ls="exa --icons"
 alias la="ls -a"
 alias ll="ls -l"
