@@ -6,6 +6,7 @@
 !/.gitignore
 !/bin/*
 !/nvim/**/*.lua
+!/nvim/snippets/*
 !/README.md
 !/.zshrc
 !/.latexmkrc

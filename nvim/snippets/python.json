@@ -1,0 +1,39 @@
+{
+    "exploit": {
+        "prefix": "exploit",
+        "body": [
+            "#!/usr/bin/env python3",
+            "",
+            "from pwn import *",
+            "import sys",
+            "",
+            "HOST = \"\"",
+            "PORT =",
+            "",
+            "exe = ELF(\"\")",
+            "libc = ELF(\"\")",
+            "",
+            "context.binary = exe",
+            "context.terminal = [\"tmux\", \"new-window\"]",
+            "",
+            "gs = '''",
+            "b main",
+            "c",
+            "'''",
+            "",
+            "def start():",
+            "    if args.GDB:",
+            "        return gdb.debug([exe.path], gdbscript=gs)",
+            "    elif args.REMOTE:",
+            "        return remote(HOST, PORT)",
+            "    else:",
+            "        return process([exe.path])",
+            "",
+            "io = start()",
+            "",
+            "io.interactive()",
+            ""
+        ],
+        "description": "exploit dev templates"
+    }
+}
