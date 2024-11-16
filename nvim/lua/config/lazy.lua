@@ -24,6 +24,8 @@ local LazyConf = {
 		{ import = "lazyvim.plugins.extras.lang.clangd" },
 		{ import = "lazyvim.plugins.extras.lang.docker" },
 		{ import = "lazyvim.plugins.extras.lang.tex" },
+		-- extras formatter
+		{ import = "lazyvim.plugins.extras.formatting.prettier" },
 		-- own conf
 		{ import = "plugins" },
 	},

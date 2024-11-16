@@ -3,7 +3,6 @@ return {
 	opts = {
 		formatters_by_ft = {
 			python = { "ruff" },
-			markdown = { "mdformat" },
 			cpp = { "clang_format" },
 		},
 		formatters = {
