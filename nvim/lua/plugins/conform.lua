@@ -9,6 +9,9 @@ return {
 			clang_format = {
 				prepend_args = { "-style={BasedOnStyle: LLVM, IndentWidth: 4}" },
 			},
+			prettier = {
+				prepend_args = { "--tab-width", "4" },
+			},
 		},
 	},
 }
