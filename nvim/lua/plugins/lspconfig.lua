@@ -7,7 +7,7 @@ return {
 			ruff = {
 				init_options = {
 					settings = {
-                        lineLength = 100,
+                        lineLength = 200,
 						lint = {
                             enable = false,
 						},
