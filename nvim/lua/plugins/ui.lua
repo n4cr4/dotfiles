@@ -17,31 +17,14 @@ return {
 	},
 	{
 		"nvim-neo-tree/neo-tree.nvim",
-		-- keys = {
-		-- 	{
-		-- 		"<leader>fe",
-		-- 		function()
-		-- 			require("neo-tree.command").execute({
-		-- 				toggle = true,
-		-- 				dir = vim.uv.cwd(),
-		-- 				position = "float",
-		-- 			})
-		-- 		end,
-		-- 	},
-		-- 	{
-		-- 		"<leader>fE",
-		-- 		function()
-		-- 			require("neo-tree.command").execute({
-		-- 				toggle = true,
-		-- 				dir = LazyVim.root(),
-		-- 				position = "float",
-		-- 			})
-		-- 		end,
-		-- 	},
-		-- 	{ "<leader>e", "<leader>fe", desc = "Explorer NeoTree (cwd)", remap = true },
-		-- 	{ "<leader>E", "<leader>fE", desc = "Explorer NeoTree (Root Dir)", remap = true },
-		-- },
+		keys = {
+			{ "<leader>E", "<leader>fe", desc = "Explorer NeoTree (Root Dir)", remap = true },
+			{ "<leader>e", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+		},
 		opts = {
+			window = {
+				position = "float",
+			},
 			filesystem = {
 				always_show = {
 					".gitignore",
